@@ -29,7 +29,9 @@ class DefaultLayout extends React.Component {
   render() {
     return (
       <div>
+        <TabLinks />
         <ConnectedCounter />
+
         {this.props.children()}
       </div>
     )
