@@ -7,9 +7,13 @@
   "dependencies": {
     "gatsby": "latest",
     "gatsby-link": "latest",
+    "gatsby-plugin-google-fonts": "^0.0.4",
     "material-ui": "^0.20.0",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "npm-font-open-sans": "^1.1.0",
     "react-redux": "5.0.5",
-    "redux": "3.6.0"
+    "redux": "3.6.0",
+    "typography": "^0.16.6"
   },
   "keywords": [
     "gatsby"
