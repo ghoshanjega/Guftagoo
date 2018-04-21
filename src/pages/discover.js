@@ -5,8 +5,8 @@ import FlatButton from 'material-ui/FlatButton';
 const Discover = () => (
   <Card>
     <CardHeader
-      title="Without Avatar"
-      subtitle="Subtitle"
+      title="Can AI be used to judge Hackathons"
+      subtitle="Technology"
       actAsExpander={true}
       showExpandableButton={true}
     />
@@ -14,9 +14,9 @@ const Discover = () => (
       <FlatButton label="No" primary={true} />
       <FlatButton label="Yes" secondary={true}/>
     </CardActions>
-    <CardHeader expandable={true} actasexpander={true}>
+    {/* <CardText expandable={true} actasexpander={true}>
       Can AI be used to judge Hackathons? 
-    </CardHeader>
+    </CardText> */}
   </Card>
 );
 
