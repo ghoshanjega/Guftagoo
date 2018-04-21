@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
@@ -24,3 +25,14 @@ const CardExampleExpandable = () => (
 );
 
 export default CardExampleExpandable;
+=======
+import React, {Component} from "react"
+
+class Discover extends Component{
+    render() {
+        return <div>Discover Page goes here</div>
+    }
+}
+
+export default Discover;
+>>>>>>> 3455c49a54d5463d7b82db9835622e9fa5db20f6
