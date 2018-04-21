@@ -9,20 +9,21 @@ import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-<<<<<<< HEAD
-=======
 import { Pageview, Whatshot, Face, Lens} from 'material-ui-icons';
 
 
 
->>>>>>> 509af7ea51c2eb26492a2f85ae989334cf170f30
 
 class TabLinks extends Component{
     state = {
         selectedIndex: 0,
       };
 
-      select = (index) => this.setState({selectedIndex: index});
+      select (index, link) {
+
+        this.setState({selectedIndex: index})
+        navigateTo(link)
+      };
     render () {
         return (
 
@@ -31,17 +32,17 @@ class TabLinks extends Component{
           <BottomNavigationItem
             label="discover"
             icon={<Pageview/>}
-            onClick={() => navigateTo("/discover/")}
+            onClick={() => this.select(0, "/discover/")}
           />
           <BottomNavigationItem
             label="Hot"
             icon={<Whatshot/>}
-            onClick={() =>  navigateTo("/feed/")}
+            onClick={() =>  this.select(1, "/feed/")}
           />
           <BottomNavigationItem
             label="My Feed"
             icon={<Face />}
-            onClick={() => navigateTo("/hot/")}
+            onClick={() => this.select(2, "/hot/")}
           />
         </BottomNavigation>
       </Paper>
@@ -52,15 +53,3 @@ class TabLinks extends Component{
     }
 }
 export default TabLinks
-
-const yourmom = {
-    // {/* <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}> */}
-                // {/* <Tabs>
-                //     <Tab label="Home Screen" onActive={() => navigateTo("/homescreen/") }/>
-                //     <Tab label="Debate" onActive={() => navigateTo("/debate/") }/>
-                //     <Tab label="Discover" onActive={() => navigateTo("/discover/") }/>
-                //     <Tab label="Feed" onActive={() => navigateTo("/feed/") }/>
-                //     <Tab label="Hot" onActive={() => navigateTo("/hot/") }/>
-
-                // </Tabs> */}
-}
