@@ -30,27 +30,6 @@ class DefaultLayout extends React.Component {
     return (
       <div>
         <ConnectedCounter />
-<<<<<<< HEAD
-        <ul>
-        <li>
-            <Link to="/yourmom.js">homescreen</Link>
-          </li>
-          <li>
-            <Link to="/debate/">debate</Link>
-          </li>
-          <li>
-            <Link to="../pages/discover/">discover</Link>
-          </li>
-          <li>
-            <Link to="/feed/">feed</Link>
-          </li>
-          <li>
-            <Link to="/hot/">hot</Link>
-          </li>
-        </ul>
-=======
-        <TabLinks />
->>>>>>> 3455c49a54d5463d7b82db9835622e9fa5db20f6
         {this.props.children()}
       </div>
     )

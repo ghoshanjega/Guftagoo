@@ -16,8 +16,8 @@ class TabLinks extends Component{
                     <Tab label="Feed" onActive={() => navigateTo("/feed/") }/>
                     <Tab label="Hot" onActive={() => navigateTo("/hot/") }/>
 
-                    </Tabs>
-                    </MuiThemeProvider>
+                </Tabs>
+                </MuiThemeProvider>
         
         </div>);
     }
