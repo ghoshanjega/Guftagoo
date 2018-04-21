@@ -9,10 +9,9 @@ import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import { Pageview, Whatshot, Face, Lens} from 'material-ui-icons';
 
-const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
-const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
-const nearbyIcon = <IconLocationOn />;
+
 
 
 class TabLinks extends Component{
@@ -27,18 +26,18 @@ class TabLinks extends Component{
                 <Paper zDepth={1} style={{position:"fixed",bottom:"0", width:"100%", zIndex:"999", left:"0"}}>
         <BottomNavigation selectedIndex={this.state.selectedIndex}>
           <BottomNavigationItem
-            label="Recents"
-            icon={recentsIcon}
+            label="discover"
+            icon={<Pageview/>}
             onClick={() => navigateTo("/discover/")}
           />
           <BottomNavigationItem
-            label="Favorites"
-            icon={favoritesIcon}
+            label="Hot"
+            icon={<Whatshot/>}
             onClick={() =>  navigateTo("/feed/")}
           />
           <BottomNavigationItem
-            label="Nearby"
-            icon={nearbyIcon}
+            label="My Feed"
+            icon={<Face />}
             onClick={() => navigateTo("/hot/")}
           />
         </BottomNavigation>

@@ -48,7 +48,7 @@ const Discover = () => (
   <Card 
   containerStyle={{backgroundColor:"#E8F5E9"}}>
     <CardTitle 
-     style={{height: "80px"}}
+     //style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Can your mom be any better? Last night I didnt tip her."
      titleColor="#123456" >
@@ -73,7 +73,7 @@ const Discover = () => (
           style={{float:"right", marginRight:"10", marginTop:"10"}}
         />
     <CardTitle 
-     style={{height: "80px"}}
+     //style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Should the death penalty be allowed?"
      titleColor="#004D40" >
@@ -97,7 +97,7 @@ const Discover = () => (
   <Card 
   containerStyle={{backgroundColor:"#E8F5E9"}}>
     <CardTitle 
-     style={{height: "80px"}}
+     //style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Should the United States Keep Daylight Saving Time?"
      titleColor="#123456" >
@@ -114,7 +114,7 @@ const Discover = () => (
   <Card 
   containerStyle={{backgroundColor:"#E8F5E9"}}>
     <CardTitle 
-     style={{height: "80px"}}
+     //style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Is sexual orientation determined at birth?"
      titleColor="#123456" >
@@ -131,7 +131,7 @@ const Discover = () => (
   <Card 
   containerStyle={{backgroundColor:"#E8F5E9"}}>
     <CardTitle 
-     style={{height: "80px"}}
+     //style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Should adults have the right to carry a concealed handgun?"
      titleColor="#123456" >
