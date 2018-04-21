@@ -33,12 +33,12 @@ class TabLinks extends Component{
           <BottomNavigationItem
             label="Hot"
             icon={<Whatshot/>}
-            onClick={() =>  navigateTo("/feed/")}
+            onClick={() =>  navigateTo("/hot/")}
           />
           <BottomNavigationItem
             label="My Feed"
             icon={<Face />}
-            onClick={() => navigateTo("/hot/")}
+            onClick={() => navigateTo("/feed/")}
           />
         </BottomNavigation>
       </Paper>

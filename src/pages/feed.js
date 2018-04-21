@@ -68,7 +68,7 @@ transform: "translateY(-50%)"}}>
   <Card 
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle 
-     style={{height: "80px"}}
+     //style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Is sexual orientation determined at birth?"
      titleColor="#123456" >
@@ -84,7 +84,7 @@ transform: "translateY(-50%)"}}>
   <Card 
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle 
-     style={{height: "80px"}}
+     //style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Should adults have the right to carry a concealed handgun?"
      titleColor="#123456" >
