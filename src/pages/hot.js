@@ -20,7 +20,7 @@ class Hot extends Component{
         <Card 
         containerStyle={{backgroundColor:"#E8F5E9"}}>
           <CardTitle 
-           titleStyle={{ fontSize: '30px' }}
+           titleStyle={{ fontSize: '25px' }}
            title="Is sexual orientation determined at birth?"
            titleColor="#123456" >
           </CardTitle>
