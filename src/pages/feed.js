@@ -13,7 +13,7 @@ import FontIcon from 'material-ui/FontIcon';
 import Avatar from 'material-ui/Avatar';
 import {Card, CardActions, CardHeader, CardText, CardTitle, } from 'material-ui/Card';
 import LinearProgress from 'material-ui/LinearProgress';
-import { AccessAlarm, ThreeDRotation, Book, FormatBold, FormatColorFill, CloudCircle, Computer, Smartphone, Visibility, Lens } from 'material-ui-icons';
+import { AccessAlarm, ThreeDRotation, Book, FormatBold, GroupWork, FormatColorFill, CloudCircle, Computer, Smartphone, Visibility, Lens } from 'material-ui-icons';
 import Chip from 'material-ui/Chip';
 
 
@@ -57,7 +57,7 @@ transform: "translateY(-90%)"}}>
                 <h2 style={{lineHeight:"1.0"}}>Boruto Morty</h2>
                 <List>
                 <ListItem disabled={true} leftAvatar={<Avatar> <Book/> </Avatar>}>Computer Science</ListItem>
-                <ListItem disabled={true} leftAvatar={<Avatar> SL </Avatar>}>Sri Lankan</ListItem>
+                <ListItem disabled={true} leftAvatar={<Avatar backgroundColor={"#D3D3D3"}> <GroupWork color={"#FFFF00"} /> </Avatar>}>120</ListItem>
                 </List>
                 </div>
         </div>
@@ -67,33 +67,33 @@ transform: "translateY(-90%)"}}>
         
 
         <div style={{display: "flex",
-    flexWrap: "wrap", fontSize:"8", color:"#00BFA5"}}>
-        <Chip backgroundColor={"#00BFA5"} style={{marginLeft:"10",marginBottom:"10"}}>
+    flexWrap: "wrap", fontSize:"8", color:"#c0e5c0"}}>
+        <Chip backgroundColor={"#c0e5c0"} style={{marginLeft:"10",marginBottom:"10"}}>
           <Avatar icon={<AccessAlarm /> } />
           Relativity
         </Chip>
 
-        <Chip backgroundColor={"#00BFA5"} style={{marginLeft:"10",marginBottom:"10"}}>
+        <Chip backgroundColor={"#c0e5c0"} style={{marginLeft:"10",marginBottom:"10"}}>
           <Avatar icon={<FormatBold /> } />
           BitCoin
         </Chip>
 
-        <Chip backgroundColor={"#00BFA5"} style={{marginLeft:"10",marginBottom:"10"}}>
+        <Chip backgroundColor={"#c0e5c0"} style={{marginLeft:"10",marginBottom:"10"}}>
           <Avatar icon={<FormatColorFill /> } />
           Chemistry
         </Chip>
 
-        <Chip backgroundColor={"#00BFA5"} style={{marginLeft:"10",marginBottom:"10"}}>
+        <Chip backgroundColor={"#c0e5c0"} style={{marginLeft:"10",marginBottom:"10"}}>
           <Avatar icon={<CloudCircle /> } />
           Cloud Computing
         </Chip>
 
-        <Chip backgroundColor={"#00BFA5"} style={{marginLeft:"10",marginBottom:"10"}}>
+        <Chip backgroundColor={"#c0e5c0"} style={{marginLeft:"10",marginBottom:"10"}}>
           <Avatar icon={<Computer  /> } />
           Computers
         </Chip>
 
-        <Chip backgroundColor={"#00BFA5"} style={{marginLeft:"10",marginBottom:"10"}}>
+        <Chip backgroundColor={"#c0e5c0"} style={{marginLeft:"10",marginBottom:"10"}}>
           <Avatar icon={<Smartphone /> } />
           Phones
         </Chip>

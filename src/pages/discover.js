@@ -67,7 +67,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should the death penalty be allowed?"
      titleColor="#004D40" >
     </CardTitle>
@@ -99,7 +99,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should parents or other adults be able to ban books from schools and libraries?"
      titleColor="#004D40" >
     </CardTitle>
@@ -131,7 +131,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Is a college education worth it?"
      titleColor="#004D40" >
     </CardTitle>
@@ -163,7 +163,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Is golf a sport?"
      titleColor="#004D40" >
     </CardTitle>
@@ -195,7 +195,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should marijuana be a medical option?"
      titleColor="#004D40" >
     </CardTitle>
@@ -230,7 +230,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should the federal minimum wage be increased?"
      titleColor="#004D40" >
     </CardTitle>
@@ -262,7 +262,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should prescription drugs be advertised directly to consumers?"
      titleColor="#004D40" >
     </CardTitle>
@@ -298,7 +298,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should prostitution be legal?"
      titleColor="#004D40" >
     </CardTitle>
@@ -332,7 +332,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Are social networking sites good for our society?"
      titleColor="#004D40" >
     </CardTitle>
@@ -366,7 +366,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should the words `under God' be in the US Pledge of Allegiance?"
      titleColor="#004D40" >
     </CardTitle>
@@ -399,7 +399,7 @@ const Discover = () => (
         />
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should the death penalty be allowed?"
      titleColor="#004D40" >
     </CardTitle>
@@ -423,7 +423,7 @@ const Discover = () => (
   containerStyle={{backgroundColor:"#E8F5E9"}}>
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
+     titleStyle={{ fontSize:"25px" }}
      title="Should the United States Keep Daylight Saving Time?"
      titleColor="#123456" >
     </CardTitle>
