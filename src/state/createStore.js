@@ -1,15 +1,8 @@
-import { createStore as reduxCreateStore } from "redux"
+import { createStore as reduxCreateStore, combineReducers } from "redux"
+import debateReducer, {initialState} from '../reducers/debatereducer'
 
-const reducer = (state, action) => {
-  if (action.type === `INCREMENT`) {
-    return Object.assign({}, state, {
-      count: state.count + 1,
-    })
-  }
-  return state
-}
+const reducer = combineReducers({debateReducer: debateReducer})
 
-const initialState = { count: 0 }
+const createStore = () => reduxCreateStore(reducer, {debateReducer: initialState})
 
-const createStore = () => reduxCreateStore(reducer, initialState)
 export default createStore

@@ -2,38 +2,25 @@ import React from "react"
 import PropTypes from "prop-types"
 import TabLinks from '../components/tablinks'
 import { connect } from "react-redux"
-
-const Counter = ({ count, increment }) => (
-  <div>
-    <p>Count: {count}</p>
-    <button onClick={increment}>Increment</button>
-  </div>
-)
-
-Counter.propTypes = {
-  count: PropTypes.number.isRequired,
-  increment: PropTypes.func.isRequired,
-}
-
-const mapStateToProps = ({ count }) => {
-  return { count }
-}
-
-const mapDispatchToProps = dispatch => {
-  return { increment: () => dispatch({ type: `INCREMENT` }) }
-}
-
-const ConnectedCounter = connect(mapStateToProps, mapDispatchToProps)(Counter)
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import { lightBaseTheme } from "material-ui/styles";
 
 class DefaultLayout extends React.Component {
   render() {
     return (
+      <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
+      
+  
       <div>
         <TabLinks />
-        <ConnectedCounter />
+        {/* <ConnectedCounter /> */}
 
         {this.props.children()}
       </div>
+      
+      
+      </MuiThemeProvider>
     )
   }
 }
