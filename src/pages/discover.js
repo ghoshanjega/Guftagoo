@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 
-const CardExampleExpandable = () => (
+const Discover = () => (
   <Card>
     <CardHeader
       title="Without Avatar"
@@ -11,16 +11,13 @@ const CardExampleExpandable = () => (
       showExpandableButton={true}
     />
     <CardActions>
-      <FlatButton label="Action1" />
-      <FlatButton label="Action2" />
+      <FlatButton label="No" primary={true} />
+      <FlatButton label="Yes" secondary={true}/>
     </CardActions>
-    <CardText expandable={true}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-      Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-      Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-    </CardText>
+    <CardHeader expandable={true} actasexpander={true}>
+      Can AI be used to judge Hackathons? 
+    </CardHeader>
   </Card>
 );
 
-export default CardExampleExpandable;
+export default Discover;
