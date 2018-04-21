@@ -14,6 +14,7 @@ import Avatar from 'material-ui/Avatar';
 import {Card, CardActions, CardHeader, CardText, CardTitle} from 'material-ui/Card';
 import LinearProgress from 'material-ui/LinearProgress';
 import { AccessAlarm, ThreeDRotation, Book } from 'material-ui-icons';
+import Chip from 'material-ui/Chip';
 
 
 
