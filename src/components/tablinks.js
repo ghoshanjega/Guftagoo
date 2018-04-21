@@ -19,7 +19,11 @@ class TabLinks extends Component{
         selectedIndex: 0,
       };
 
-      select = (index) => this.setState({selectedIndex: index});
+      select (index, link) {
+
+        this.setState({selectedIndex: index})
+        navigateTo(link)
+      };
     render () {
         return (
 
@@ -28,7 +32,7 @@ class TabLinks extends Component{
           <BottomNavigationItem
             label="discover"
             icon={<Pageview/>}
-            onClick={() => navigateTo("/discover/")}
+            onClick={() => this.select(0, "/discover/")}
           />
           <BottomNavigationItem
             label="Hot"
@@ -49,15 +53,3 @@ class TabLinks extends Component{
     }
 }
 export default TabLinks
-
-const yourmom = {
-    // {/* <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}> */}
-                // {/* <Tabs>
-                //     <Tab label="Home Screen" onActive={() => navigateTo("/homescreen/") }/>
-                //     <Tab label="Debate" onActive={() => navigateTo("/debate/") }/>
-                //     <Tab label="Discover" onActive={() => navigateTo("/discover/") }/>
-                //     <Tab label="Feed" onActive={() => navigateTo("/feed/") }/>
-                //     <Tab label="Hot" onActive={() => navigateTo("/hot/") }/>
-
-                // </Tabs> */}
-}

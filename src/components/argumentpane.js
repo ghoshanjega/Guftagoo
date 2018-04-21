@@ -5,16 +5,21 @@ import Paper from 'material-ui/Paper'
 
 export default class ArgumentPane extends Component{
     render() {
+        let stylePaper = {width:"70%",margin:"20px 10px"}
+        let styleCard = {}
+        if(this.props.against == true){
+            styleCard.backgroundColor = "red";
+            stylePaper.float = "right"
+        }else{
+            styleCard.backgroundColor = "#a4c639";
+            stylePaper.float = "left"
+        }
         return (
-        <Paper zDepth={2} >
-            <Card>
-                <CardHeader
-                title={this.props.title}
-                
-                >
-                </CardHeader>
+        <Paper zDepth={5} style={stylePaper} rounded={true}>
+            <Card style={styleCard}>
+                <CardHeader style={{textAlign:"center", fontWeight:"bold"}}title={this.props.title}></CardHeader>
                 <CardText actAsExpander={true}>
-                <ul>
+                    <ul>
                         {this.props.arguments.map((val) => <li>{val}</li>)}
                     </ul>
                 </CardText>
@@ -22,13 +27,12 @@ export default class ArgumentPane extends Component{
                 <ul>
                         {this.props.evidence.map((val) => <li>{val}</li>)}
                     </ul></CardText>
-                <CardActions>
-                    <FlatButton label="Action1" />
-                    <FlatButton label="Action2" />
+                <CardActions style={{margin:"0 auto", textAlign:"center"}}>
+                    <FlatButton  backgroundColor label="Like" />
                 </CardActions>
             </Card>
         </Paper>    
-    );
+        );
     }
   
 }

@@ -427,7 +427,7 @@ const Discover = () => (
      title="Should the United States Keep Daylight Saving Time?"
      titleColor="#123456" >
     </CardTitle>
-    <LinearProgress mode="determinate" value={50} />
+    <LinearProgress mode="determinate" value={40} color="green" style={{height:"10px"}}/>
     <CardActions style={{alignContent:"flex-end"}}>
       <RaisedButton label="No"   backgroundColor="#ffffff" />
       <RaisedButton label="Yes"  style={{alignContent:"flex-end"}}/>
