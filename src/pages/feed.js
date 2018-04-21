@@ -15,6 +15,7 @@ import {Card, CardActions, CardHeader, CardText, CardTitle, } from 'material-ui/
 import LinearProgress from 'material-ui/LinearProgress';
 import { AccessAlarm, ThreeDRotation, Book, FormatBold, GroupWork, FormatColorFill, CloudCircle, Computer, Smartphone, Visibility, Lens } from 'material-ui-icons';
 import Chip from 'material-ui/Chip';
+import { navigateTo } from 'gatsby-link';
 
 
 
@@ -100,7 +101,7 @@ transform: "translateY(-90%)"}}>
         </div> 
         </Paper>
         </ListItem>
-        <ListItem>
+        <ListItem onClick={() =>  navigateTo("/debate/")}>
   <Card 
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle 
