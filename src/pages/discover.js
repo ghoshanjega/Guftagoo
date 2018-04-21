@@ -36,38 +36,22 @@ const getTheme = () => {
 const Discover = () => (
   <MuiThemeProvider muiTheme={getMuiTheme(baseTheme)}>
   <List>
-    <ListItem>
-  <Card 
-  containerStyle={{backgroundColor:"#E8F5E9"}}>
-    <CardTitle 
-     style={{height: "80px"}}
-     titleStyle={{ fontSize: '30px' }}
-     title="Can your mom be any better? Last night I didnt tip her."
-     titleColor="#123456" >
-    </CardTitle>
-    <LinearProgress mode="determinate" value={50} />
-    <CardActions style={{alignContent:"flex-end"}}>
-      <RaisedButton label="No"  />
-      <RaisedButton label="Yes"  style={{alignContent:"flex-end"}}/>
-    </CardActions>
-  </Card>
-  </ListItem>
 
   <ListItem>
   <Card 
-  containerStyle={{backgroundColor:"ffffff"}}>
+  containerStyle={{backgroundColor:"ffffff"}} >
     <CardTitle 
      style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Should the death penalty be allowed?"
      titleColor="#004D40" >
     </CardTitle>
-    <LinearProgress mode="determinate" value={50} color="#004D40" />
+    <LinearProgress mode="determinate" value={40} color="green" style={{height:"10px"}}/>
     <CardActions style={{alignContent:"flex-end"}}>
       
       <div style={{alignContent:"flex-end"}}>
       <RaisedButton label="No"   backgroundColor="#ffffff" />
-      <FlatButton label="Tec" style={{marginLeft:"auto", marginRight:"auto"}}/>
+      <FlatButton label="Tec" style={{marginLeft:"auto", marginRight:"auto", width:"auto"}}/>
       <RaisedButton label="Yes"  style={{alignContent:"flex-end", float:"right"}}/>
         </div>
       
@@ -84,7 +68,7 @@ const Discover = () => (
      title="Should the United States Keep Daylight Saving Time?"
      titleColor="#123456" >
     </CardTitle>
-    <LinearProgress mode="determinate" value={50} />
+    <LinearProgress mode="determinate" value={50} color="green" style={{height:"10px"}}/>
     <CardActions style={{alignContent:"flex-end"}}>
       <RaisedButton label="No"   backgroundColor="#ffffff" />
       <RaisedButton label="Yes"  style={{alignContent:"flex-end"}}/>
@@ -101,7 +85,7 @@ const Discover = () => (
      title="Is sexual orientation determined at birth?"
      titleColor="#123456" >
     </CardTitle>
-    <LinearProgress mode="determinate" value={50} />
+    <LinearProgress mode="determinate" value={80} color="green" style={{height:"10px"}}/>
     <CardActions style={{alignContent:"flex-end"}}>
       <RaisedButton label="No"   backgroundColor="#ffffff" />
       <RaisedButton label="Yes"  style={{alignContent:"flex-end"}}/>
@@ -118,7 +102,7 @@ const Discover = () => (
      title="Should adults have the right to carry a concealed handgun?"
      titleColor="#123456" >
     </CardTitle>
-    <LinearProgress mode="determinate" value={50} />
+    <LinearProgress mode="determinate" value={40} color="green" style={{height:"10px"}}/>
     <CardActions style={{alignContent:"flex-end"}}>
       <RaisedButton label="No"   backgroundColor="#ffffff" />
       <RaisedButton label="Yes"  style={{alignContent:"flex-end"}}/>

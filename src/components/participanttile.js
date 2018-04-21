@@ -4,6 +4,8 @@ import FileFolder from 'material-ui/svg-icons/file/folder';
 import FontIcon from 'material-ui/FontIcon';
 import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
+import Link, {navigateTo} from "gatsby-link"
+
 
 import {
   blue300,
@@ -19,7 +21,7 @@ const style = {margin: 5};
 export default class ParticipantTile extends Component{
     render(){
         return (<ListItem disabled={true}>
-        {this.props.name}
+        <Link to="/profile/">{this.props.name}</Link>
         </ListItem>)
     }
 }

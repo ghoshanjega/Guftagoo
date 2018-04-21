@@ -25,7 +25,22 @@ const initialState = {
     openAgainst: false,
     nodes: [
         {
-            title: "Argument opening here",
+            against: false,
+            title: "For Argument opening here",
+            evidence: [
+                "evidence 1",
+                "evidence 2",
+                "evidence 3"
+            ],
+            citations: [
+                "citation 1",
+                "citation 2",
+                "citation 3"
+            ]
+        },
+        {
+            against: true,
+            title: "Against Argument opening here",
             evidence: [
                 "evidence 1",
                 "evidence 2",
