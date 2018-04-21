@@ -11,6 +11,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {List, ListItem} from 'material-ui/List';
 import FontIcon from 'material-ui/FontIcon';
 import Avatar from 'material-ui/Avatar';
+import {Card, CardActions, CardHeader, CardText, CardTitle} from 'material-ui/Card';
+import LinearProgress from 'material-ui/LinearProgress';
+import { AccessAlarm, ThreeDRotation, Book } from 'material-ui-icons';
 
 
 
@@ -52,14 +55,47 @@ transform: "translateY(-50%)"}}>
                 
                 <h2 style={{lineHeight:"1.0"}}>Ghoshan Jaganathamani</h2>
                 <List>
+                <ListItem disabled={true} leftAvatar={<Avatar> <Book/> </Avatar>}>Computer Science</ListItem>
                 <ListItem disabled={true} leftAvatar={<Avatar> CS </Avatar>}>Computer Science</ListItem>
-
-                <ListItem disabled={true} leftAvatar={<Avatar> CS </Avatar>}>Computer Science</ListItem>
-    </List>
+                </List>
                 </div>
         </div>
         </Paper>
         </ListItem>
+
+         <ListItem>
+  <Card 
+  containerStyle={{backgroundColor:"#ffffff"}}>
+    <CardTitle 
+     style={{height: "80px"}}
+     titleStyle={{ fontSize: '30px' }}
+     title="Is sexual orientation determined at birth?"
+     titleColor="#123456" >
+    </CardTitle>
+    <CardText style={{float:"right"}}> PSYCHOLOGICAL
+    </CardText> 
+    <LinearProgress mode="determinate" value={40} style={{height: "10"}} color={"#9CCC65"}/>
+    
+  </Card>
+  </ListItem>
+
+  <ListItem>
+  <Card 
+  containerStyle={{backgroundColor:"#ffffff"}}>
+    <CardTitle 
+     style={{height: "80px"}}
+     titleStyle={{ fontSize: '30px' }}
+     title="Should adults have the right to carry a concealed handgun?"
+     titleColor="#123456" >
+    </CardTitle>
+    {/* <CardText > */}
+    <div style={{float:"left", marginBottom:"10", marginLeft:"15"}}> 123,434 views </div>
+        <div style={{float:"right", marginBottom:"10", marginRight:"15"}}> POLITICAL </div>
+    {/* </CardText>  */}
+    <LinearProgress mode="determinate" value={70} style={{height: "10"}} color={"#9CCC65"} />
+  </Card>
+  </ListItem>
+
     </List>
     </MuiThemeProvider>
 );

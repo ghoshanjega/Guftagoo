@@ -55,7 +55,7 @@ const Discover = () => (
 
   <ListItem>
   <Card 
-  containerStyle={{backgroundColor:"#E8F5E9"}}>
+  containerStyle={{backgroundColor:"ffffff"}}>
     <CardTitle 
      style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
