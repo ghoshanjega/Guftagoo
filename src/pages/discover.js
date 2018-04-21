@@ -7,6 +7,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {List, ListItem} from 'material-ui/List';
 import {cyan500, pink700} from 'material-ui/styles/colors';
 import LinearProgress from 'material-ui/LinearProgress';
+import CircularProgress from 'material-ui/CircularProgress';
+import { Spellcheck, Done, ThumbDown, ThumbUp, ViewHeadline } from 'material-ui-icons';
 
 
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -35,7 +37,13 @@ const getTheme = () => {
 
 const Discover = () => (
   <MuiThemeProvider muiTheme={getMuiTheme(baseTheme)}>
+  
   <List>
+    <ListItem style={{height:"80px"}}>
+    <h2 style={{color:"#00BFA5", float:"right", marginRight:"20", marginLeft:"20"}}>
+    <ViewHeadline color={"#00BFA5"}/> CATEGORIES
+  </h2>
+      </ListItem>
     <ListItem>
   <Card 
   containerStyle={{backgroundColor:"#E8F5E9"}}>
@@ -56,19 +64,29 @@ const Discover = () => (
   <ListItem>
   <Card 
   containerStyle={{backgroundColor:"ffffff"}}>
+  <CircularProgress
+          mode="determinate"
+          value="90"
+          size={30}
+          color={"#00bfa5"}
+          thickness={2}
+          style={{float:"right", marginRight:"10", marginTop:"10"}}
+        />
     <CardTitle 
      style={{height: "80px"}}
      titleStyle={{ fontSize: '30px' }}
      title="Should the death penalty be allowed?"
      titleColor="#004D40" >
     </CardTitle>
-    <LinearProgress mode="determinate" value={50} color="#004D40" />
+    <div style={{float:"right", marginRight:"10", marginBottom:"10"}}> PSYCOLOGY
+    </div>
+    <LinearProgress  mode="determinate" value={50} color={"#00BFA5"} />
     <CardActions style={{alignContent:"flex-end"}}>
       
       <div style={{alignContent:"flex-end"}}>
-      <RaisedButton label="No"   backgroundColor="#ffffff" />
-      <FlatButton label="Tec" style={{marginLeft:"auto", marginRight:"auto"}}/>
-      <RaisedButton label="Yes"  style={{alignContent:"flex-end", float:"right"}}/>
+      <RaisedButton icon={<ThumbDown color={"#004D40"}/>}   backgroundColor="#ffffff" />
+      {/* <FlatButton label="Tec"/> */}
+      <RaisedButton icon={<ThumbUp  color={"#004D40"}/>}  style={{alignContent:"flex-end", float:"right"}}/>
         </div>
       
     </CardActions>
