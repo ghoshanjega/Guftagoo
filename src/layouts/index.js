@@ -31,7 +31,6 @@ class DefaultLayout extends React.Component {
       <div>
         <TabLinks />
         <ConnectedCounter />
-        <TabLinks />
 
         {this.props.children()}
       </div>
