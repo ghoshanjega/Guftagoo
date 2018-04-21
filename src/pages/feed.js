@@ -15,7 +15,11 @@ import {Card, CardActions, CardHeader, CardText, CardTitle, } from 'material-ui/
 import LinearProgress from 'material-ui/LinearProgress';
 import { AccessAlarm, ThreeDRotation, Book, FormatBold, GroupWork, FormatColorFill, CloudCircle, Computer, Smartphone, Visibility, Lens } from 'material-ui-icons';
 import Chip from 'material-ui/Chip';
+<<<<<<< HEAD
 import { navigateTo } from 'gatsby-link';
+=======
+import Profilepic from '../daniel.jpg'
+>>>>>>> d8c7899f1215f41feedea0d1e579d8c64d2a2a5a
 
 
 
@@ -52,7 +56,7 @@ const Feed = () => (
 top: "50%",
 transform: "translateY(-90%)"}}>
                 <div style={{flex: "50%"}}>
-                <img src="/src/pages/daniel.jpg"/></div>
+                <img src={Profilepic} width="100" height="200"/></div>
                 <div style={{flex: "50%"}}>
                 
                 <h2 style={{lineHeight:"1.0"}}>Boruto Morty</h2>
