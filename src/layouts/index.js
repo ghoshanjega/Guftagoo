@@ -35,13 +35,13 @@ class DefaultLayout extends React.Component {
         <ConnectedCounter />
         <ul>
         <li>
-            <Link to="/homescreen/">homescreen</Link>
+            <Link to="/yourmom.js">homescreen</Link>
           </li>
           <li>
             <Link to="/debate/">debate</Link>
           </li>
           <li>
-            <Link to="/discover/">discover</Link>
+            <Link to="../pages/discover/">discover</Link>
           </li>
           <li>
             <Link to="/feed/">feed</Link>
