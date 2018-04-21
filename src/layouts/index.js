@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Link from "gatsby-link"
+import TabLinks from '../components/tablinks'
 import { connect } from "react-redux"
 
 const Counter = ({ count, increment }) => (
@@ -29,27 +29,8 @@ class DefaultLayout extends React.Component {
   render() {
     return (
       <div>
-        <Link to="/">
-          <h3>Redux example</h3>
-        </Link>
         <ConnectedCounter />
-        <ul>
-        <li>
-            <Link to="/homescreen/">homescreen</Link>
-          </li>
-          <li>
-            <Link to="/debate/">debate</Link>
-          </li>
-          <li>
-            <Link to="/discover/">discover</Link>
-          </li>
-          <li>
-            <Link to="/feed/">feed</Link>
-          </li>
-          <li>
-            <Link to="/hot/">hot</Link>
-          </li>
-        </ul>
+        <TabLinks />
         {this.props.children()}
       </div>
     )
