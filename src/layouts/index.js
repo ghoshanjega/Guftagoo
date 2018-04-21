@@ -15,10 +15,9 @@ class DefaultLayout extends React.Component {
       
   
       <div style={globalStyle}>
-        <TabLinks />
-        {/* <ConnectedCounter /> */}
-
+        
         {this.props.children()}
+        <TabLinks />
       </div>
       
       
