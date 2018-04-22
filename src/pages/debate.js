@@ -2,10 +2,12 @@ import React, {Component} from "react"
 import { connect } from "react-redux"
 import ArgumentPane from "../components/argumentpane"
 import ParticipantsList from '../components/participantslist'
-import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import Title from '../components/title'
 import Dialog from 'material-ui/Dialog'
 import LinearProgress from 'material-ui/LinearProgress'
+import { AccessAlarm, ThreeDRotation, Book, FormatBold, GroupWork, FormatColorFill, CloudCircle, Computer, Smartphone, Visibility, Lens } from 'material-ui-icons';
+
 
 const mapStateToProps = (state) => {
     return {debateReducer: state.debateReducer}
@@ -16,25 +18,24 @@ const pad = (d) => {
 }
 const mapDispatchToProps = dispatch => {
     return {
-            toggleDrawerFor() {
-                
-                dispatch({type: "TOGGLE_DRAWER_FOR"})
-            },
-            toggleDrawerAgainst() {
-                dispatch({type: "TOGGLE_DRAWER_AGAINST"})
-            },
-            decrementTime() {
-                dispatch({type: "DECREMENT_TIME"})
-            },
-            toggleSideDialog() {
-                dispatch({type: "TOGGLE_SIDE"})
-            }, 
-            pickASide(side) {
-                dispatch({type: "PICK_SIDE", payload: {side:side}})
-                this.toggleSideDialog()
-            }
-
+        toggleDrawerFor() {
+            
+            dispatch({type: "TOGGLE_DRAWER_FOR"})
+        },
+        toggleDrawerAgainst() {
+            dispatch({type: "TOGGLE_DRAWER_AGAINST"})
+        },
+        decrementTime() {
+            dispatch({type: "DECREMENT_TIME"})
+        },
+        toggleSideDialog() {
+            dispatch({type: "TOGGLE_SIDE"})
+        }, 
+        pickASide(side) {
+            dispatch({type: "PICK_SIDE", payload: {side:side}})
+            this.toggleSideDialog()
         }
+    }
 }
 
 
@@ -55,17 +56,22 @@ class Debate extends Component{
         }else if(this.props.debateReducer.side == "Against"){
             chosenColor = againstColor;
         }
+        let debateStatus = ""
+        if(this.props.debateReducer.time == 0){
+            debateStatus = (<div style={{float:"left", marginBottom:"10", marginLeft:"15", color:"#000000",display:"flex"}}> DEBATE ENDED </div>)
+        }else{
+            debateStatus = (<div style={{float:"left", marginBottom:"10", marginLeft:"15", color:"#FF0000",display:"flex"}}><Lens style={{marginRight:"10", size: "3px"}} color={"#FF0000"}/> ON GOING </div>)
+        }
         let actions = [
-            <FlatButton
+            <RaisedButton
               label="For"
-              primary={true}
               backgroundColor = {forColor}
               onClick={() => this.props.pickASide("For")}
             />,
-            <FlatButton
+            <RaisedButton
               label="Against"
-              primary={true}
               backgroundColor = {againstColor}
+
               onClick={() => this.props.pickASide("Against")}
             />
           ];
@@ -78,8 +84,8 @@ class Debate extends Component{
                 >
                 Pick a side!
                 </Dialog>
-            <FlatButton label="Show For" onClick={() => this.props.toggleDrawerFor()}/>
-            <FlatButton label="Show Against" onClick={() => this.props.toggleDrawerAgainst()} style={{float:"right"}}/>
+            <RaisedButton backgroundColor = {forColor} style = {{color:"#FFFFFF !important"}} label="For" onClick={() => this.props.toggleDrawerFor()}/>
+            <RaisedButton backgroundColor = {againstColor} style = {{color:"#FFFFFF !important"}}  label="Against" onClick={() => this.props.toggleDrawerAgainst()} style={{float:"right"}}/>
             <ParticipantsList participants={['Arjit', 'Kshitij']} open={this.props.debateReducer.openFor} against={false}/>
             <ParticipantsList participants={['Ghoshan', 'Yawer']} open={this.props.debateReducer.openAgainst} against={true}/>
             <a onClick={this.props.toggleSideDialog} ><Title style={{color: chosenColor}}>{this.props.debateReducer.title}</Title></a>
@@ -89,6 +95,7 @@ class Debate extends Component{
                 <div style={{float:"right"}}>55 viewers</div>
                 
             </div>
+            {debateStatus}
             <div style={{overflowY: "scroll", width: "100%", height: "440px"}}>
                 {this.props.debateReducer.nodes.map((val) => (<ArgumentPane against = {val.against} title={val.title} arguments = {val.evidence} evidence = {val.citations}/>))}
             </div>

@@ -9,7 +9,7 @@ import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { Pageview, Whatshot, Face, Lens} from 'material-ui-icons';
+import { Pageview, Whatshot, Face, Lens, Help} from 'material-ui-icons';
 
 
 
@@ -43,6 +43,11 @@ class TabLinks extends Component{
             label="My Feed"
             icon={<Face />}
             onClick={() =>  this.select(2, "/feed/")}
+          />
+          <BottomNavigationItem
+            label="Propose a Question"
+            icon={<Help />}
+            onClick={() =>  this.select(3, "/proposetopic/")}
           />
         </BottomNavigation>
       </Paper>

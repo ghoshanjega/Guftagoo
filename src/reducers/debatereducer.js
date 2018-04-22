@@ -25,6 +25,7 @@ export default function debateReducer(state = null, action){
         case "PICK_SIDE":
             tmp.side = action.payload.side
             return tmp
+        
         default:
             return state
     }
