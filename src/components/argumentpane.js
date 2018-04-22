@@ -9,21 +9,21 @@ export default class ArgumentPane extends Component{
     render() {
         let forColor = "#4062BB"
     let againstColor = "#DB2B39"
-        let stylePaper = {width:"70%",margin:"20px 10px", borderRadius:"50px"}
+        let stylePaper = {width:"70%",margin:"5px 5px", borderRadius:"20px"}
         let styleCard = {}
-        styleCard.borderRadius = "50px"
+        styleCard.borderRadius = "20px"
         if(this.props.against == true){
-            styleCard.border = "5px solid "+againstColor;
+            styleCard.border = "3px solid "+againstColor;
             stylePaper.float = "right"
         }else{
-            styleCard.border = "5px solid "+forColor;
+            styleCard.border = "3px solid "+forColor;
             stylePaper.float = "left"
         }
         return (
         <Paper  style={stylePaper} rounded={true}>
             <Card style={styleCard}>
                 <CardTitle style={{fontWeight:"bold"}} title={this.props.title} ></CardTitle>
-                <CardText  style={{fontSize: "18px"}} actAsExpander={true}>
+                <CardText  style={{fontSize: "16px"}} actAsExpander={true}>
                     {this.props.arguments.map((val) => <li>{val}</li>)}
                 </CardText>
                 <CardText expandable={true}>

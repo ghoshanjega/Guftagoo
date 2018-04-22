@@ -32,7 +32,7 @@ export default function debateReducer(state = null, action){
 }
 
 const initialState = {
-    title: "Argument Title Goes Here",
+    title: "Microsoft should invest in a contingency plan for singularity?",
     openFor: false,
     openAgainst: false,
     toggleSide: false,
@@ -41,9 +41,9 @@ const initialState = {
     nodes: [
         {
             against: false,
-            title: "For Argument opening here",
+            title: "",
             evidence: [
-                "evidence 1",
+                "Sir Tim: So when AI starts to make decisions such as who gets a mortgage, that's a big one. Or which companies to acquire and when AI starts creating its own companies, creating holding companies, generating new versions of itself to run these companies",
                 "evidence 2",
                 "evidence 3"
             ],
@@ -55,9 +55,9 @@ const initialState = {
         },
         {
             against: true,
-            title: "Against Argument opening here",
+            title: "",
             evidence: [
-                "evidence 1",
+                "Mark Zuckerberg: Whenever I hear people saying AI is going to hurt people in the future, I think yeah, you know, technology can generally always be used for good and bad, and you need to be careful about how you build it and you need to be careful about what you build and how it is going to be used.",
                 "evidence 2",
                 "evidence 3"
             ],

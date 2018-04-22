@@ -43,7 +43,7 @@ class Hot extends Component{
           </CardTitle>
 
           
-          <Paper style={{marginLeft:"10", marginRight:"10", marginBottom:"20", backgroundColor:"#db2b39", padding:"20", borderRadius:"20",color:"#ffffff"}}>
+          <Paper style={{marginLeft:"30", marginRight:"10", marginBottom:"20", backgroundColor:"#db2b39", padding:"20", borderRadius:"20",color:"#ffffff"}}>
           
           <Highlighter
     highlightClassName="YourHighlightClass"
@@ -81,7 +81,7 @@ textToHighlight="Rather than judge them, I give them what they came here for—a
 
 
 
-    <Paper style={{positionleft:"100",width:"300px",marginLeft:"10", marginRight:"10", marginBottom:"20", backgroundColor:"#db2b39", padding:"20", borderRadius:"20",color:"#ffffff"}}>
+    <Paper style={{positionleft:"100",width:"300px",marginLeft:"40", marginRight:"10", marginBottom:"40", backgroundColor:"#db2b39", padding:"20", borderRadius:"20",color:"#ffffff"}}>
   
   <Highlighter
 highlightClassName="YourHighlightClass"
