@@ -35,11 +35,11 @@ class Hot extends Component{
         <ListItem>
           <Whatshot color={"#FF0000"} style={{float:"right", marginRight: 20, marginTop: 20}} />
         <Card 
-        containerStyle={{backgroundColor:"#FFFFFF"}}>
+        style={{backgroundColor:"#FFFFFF", border:"5", borderColor:"#004D40"}}>
           <CardTitle 
            titleStyle={{ fontSize: '25px' }}
            title="Is sexual orientation determined at birth?"
-           titleColor="#123456" >
+           titleColor="#004D40" >
           </CardTitle>
 
           
@@ -65,7 +65,7 @@ containerStyle={{backgroundColor:"#FFFFFF"}}>
   <CardTitle 
    titleStyle={{ fontSize: '25px' }}
    title="Should abortion be illegal?"
-   titleColor="#123456" >
+   titleColor="#004d40" >
   </CardTitle>
 
   
@@ -81,7 +81,7 @@ textToHighlight="Rather than judge them, I give them what they came here for—a
 
 
 
-    <Paper style={{float:"right",width:"300px",marginLeft:"10", marginRight:"10", marginBottom:"20", backgroundColor:"#db2b39", padding:"20", borderRadius:"20",color:"#ffffff"}}>
+    <Paper style={{positionleft:"100",width:"300px",marginLeft:"10", marginRight:"10", marginBottom:"20", backgroundColor:"#db2b39", padding:"20", borderRadius:"20",color:"#ffffff"}}>
   
   <Highlighter
 highlightClassName="YourHighlightClass"

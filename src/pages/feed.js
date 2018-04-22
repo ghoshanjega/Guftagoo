@@ -15,11 +15,8 @@ import {Card, CardActions, CardHeader, CardText, CardTitle, } from 'material-ui/
 import LinearProgress from 'material-ui/LinearProgress';
 import { AccessAlarm, ThreeDRotation, Book, FormatBold, GroupWork, FormatColorFill, CloudCircle, Computer, Smartphone, Visibility, Lens } from 'material-ui-icons';
 import Chip from 'material-ui/Chip';
-<<<<<<< HEAD
 import { navigateTo } from 'gatsby-link';
-=======
 import Profilepic from '../daniel.jpg'
->>>>>>> d8c7899f1215f41feedea0d1e579d8c64d2a2a5a
 
 
 
