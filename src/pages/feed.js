@@ -102,7 +102,7 @@ transform: "translateY(-90%)"}}>
         </div> 
         </Paper>
         </ListItem>
-        <ListItem onClick={() =>  navigateTo("/debate/")}>
+        <ListItem onClick={() =>  navigateTo("/microsoftdebate/")}>
   <Card 
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle 
