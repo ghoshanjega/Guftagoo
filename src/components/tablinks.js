@@ -13,31 +13,29 @@ import { Pageview, Whatshot, Face, Lens, Help, AddBox} from 'material-ui-icons';
 
 
 
-
+let tmpselind = 0
 class TabLinks extends Component{
-    state = {
-        selectedIndex: 0,
-      };
+  select = (index, link) => {
+    tmpselind = index
+    navigateTo(link)
+  };
 
-      select (index, link) {
-
-        this.setState({selectedIndex: index})
-        navigateTo(link)
-      };
+      
     render () {
+      
         return (
 
-                <Paper zDepth={1} style={{position:"fixed",bottom:"0", width:"100%", zIndex:"999", left:"0"}}>
-        <BottomNavigation selectedIndex={this.state.selectedIndex}>
+       <Paper style={{position:"fixed", bottom:"0", margin:"0 auto", width:"100%"}}>
+        <BottomNavigation selectedIndex={tmpselind}>
           <BottomNavigationItem
-            label="discover"
+            label="Discover"
             icon={<Pageview/>}
             onClick={() => this.select(0, "/discover/")}
           />
           <BottomNavigationItem
             label="Hot"
             icon={<Whatshot/>}
-            onClick={() =>   this.select(1, "/hot/")}
+            onClick={() => this.select(1, "/hot/")}
           />
           <BottomNavigationItem
             label="My Feed"

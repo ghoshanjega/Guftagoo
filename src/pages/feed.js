@@ -56,7 +56,7 @@ transform: "translateY(-90%)"}}>
                 <img src={Profilepic} width="100" height="200"/></div>
                 <div style={{flex: "50%"}}>
                 
-                <h2 style={{lineHeight:"1.0", color:"#00bfa5"}}>Boruto Morty</h2>
+                <h2 style={{lineHeight:"1.0", color:"#00bfa5"}}>Mike</h2>
                 <List>
                 <ListItem disabled={true} leftAvatar={<Avatar> <Book/> </Avatar>}>Computer Science</ListItem>
                 <ListItem disabled={true} leftAvatar={<Avatar backgroundColor="#D3D3D3"> <GroupWork color="#FFFF00"/> </Avatar>}>120</ListItem>
@@ -64,7 +64,7 @@ transform: "translateY(-90%)"}}>
                 </div>
         </div>
         
-        
+        <div style={{margin:"30px 0"}} ></div>
 
         <div style={{display: "flex",
     flexWrap: "wrap", fontSize:"8", color:"#c0e5c0"}}>
@@ -105,7 +105,6 @@ transform: "translateY(-90%)"}}>
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '25px' }}
      title="Microsoft should invest in a contingency plan for singularity?"
      titleColor="#123456" >
     </CardTitle>
@@ -123,9 +122,9 @@ transform: "translateY(-90%)"}}>
   <Card 
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle
-    onClick={() =>  navigateTo("/results/")}>
+    onClick={() =>  navigateTo("/results/")}
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '25px' }}
+     //titleStyle={{ fontSize: '25px' }}
      title="Should adults have the right to carry a concealed handgun?"
      titleColor="#123456" >
     </CardTitle>
@@ -144,7 +143,7 @@ transform: "translateY(-90%)"}}>
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '25px' }}
+     //titleStyle={{ fontSize: '25px' }}
      title="Are we there yet"
      titleColor="#123456" >
     </CardTitle>
@@ -163,7 +162,7 @@ transform: "translateY(-90%)"}}>
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '25px' }}
+     //titleStyle={{ fontSize: '25px' }}
      title="Should pedestrians walk on left?"
      titleColor="#123456" >
     </CardTitle>
@@ -182,7 +181,7 @@ transform: "translateY(-90%)"}}>
   containerStyle={{backgroundColor:"#ffffff"}}>
     <CardTitle 
      //style={{height: "80px"}}
-     titleStyle={{ fontSize: '25px' }}
+     //titleStyle={{ fontSize: '25px' }}
      title="Is terrorism and religion unseperatable?"
      titleColor="#123456" >
     </CardTitle>

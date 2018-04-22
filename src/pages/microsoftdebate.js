@@ -58,9 +58,9 @@ class Debate extends Component{
         }
         let debateStatus = ""
         if(this.props.debateReducer.time == 0){
-            debateStatus = (<div style={{float:"left", marginBottom:"10", marginLeft:"15", color:"#000000",display:"flex"}}> DEBATE ENDED </div>)
+            debateStatus = (<div style={{float:"left", marginBottom:"10px", marginLeft:"15px", color:"#000000",display:"flex"}}> DEBATE ENDED </div>)
         }else{
-            debateStatus = (<div style={{float:"left", marginBottom:"10", marginLeft:"15", color:"#FF0000",display:"flex"}}><Lens style={{marginRight:"10", size: "3px"}} color={"#FF0000"}/> ON GOING </div>)
+            debateStatus = (<div style={{float:"left", marginBottom:"10px", marginLeft:"15px", color:"#FF0000",display:"flex"}}><Lens style={{marginRight:"10", size: "3px"}} color={"#FF0000"}/> ON GOING </div>)
         }
         let actions = [
             <FlatButton
@@ -89,7 +89,7 @@ class Debate extends Component{
             <ParticipantsList participants={['Sir Tim B-Lee', 'Elon Musk','Steve Wozniak','Maggie Boden','Jaan Tallinn']} open={this.props.debateReducer.openFor} against={false}/>
             <ParticipantsList participants={['Prof. Oh Jun-ho', 'Sophia','Mark Zuckerberg','Bill Gates','Kshitij Verma']} open={this.props.debateReducer.openAgainst} against={true}/>
             <a onClick={this.props.toggleSideDialog} ><Title style={{color: chosenColor}}>{this.props.debateReducer.title}</Title></a>
-            <LinearProgress mode="determinate" value={70} color="green" style={{height:"30px", marginBottom:"20px"}}/>
+            <LinearProgress mode="determinate" value={70} color={forColor} style={{height:"30px", marginBottom:"20px", backgroundColor:againstColor}}/>
             <div>
                 <div style={{float:"left"}}>Time left: {Math.floor(this.props.debateReducer.time/60)}:{pad(this.props.debateReducer.time % 60)}</div>
                 <div style={{float:"right"}}>55 viewers</div>
@@ -100,7 +100,6 @@ class Debate extends Component{
                 {this.props.debateReducer.nodes.map((val) => (<ArgumentPane against = {val.against} title={val.title} arguments = {val.evidence} evidence = {val.citations}/>))}
             </div>
         </div>)
-
     }
 }
 

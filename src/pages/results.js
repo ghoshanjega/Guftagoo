@@ -9,7 +9,7 @@ import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 export default class Result  extends Component{
     render(){
         return(
-                <div style={{flaot:"left", fontFamily:"opensans", fontSize:"50px"}}>
+                <div style={{float:"left", fontFamily:"opensans", fontSize:"50px"}}>
                 79%
                 </div>
         );

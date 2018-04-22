@@ -58,9 +58,9 @@ class Debate extends Component{
         }
         let debateStatus = ""
         if(this.props.debateReducer.time == 0){
-            debateStatus = (<div style={{float:"left", marginBottom:"10", marginLeft:"15", color:"#000000",display:"flex"}}> DEBATE ENDED </div>)
+            debateStatus = (<div style={{float:"left", marginBottom:"10px", marginLeft:"15px", color:"#000000",display:"flex"}}> DEBATE ENDED </div>)
         }else{
-            debateStatus = (<div style={{float:"left", marginBottom:"10", marginLeft:"15", color:"#FF0000",display:"flex"}}><Lens style={{marginRight:"10", size: "3px"}} color={"#FF0000"}/> ON GOING </div>)
+            debateStatus = (<div style={{float:"left", marginBottom:"10px", marginLeft:"15px", color:"#FF0000",display:"flex"}}><Lens style={{marginRight:"10px", size: "3px"}} color={"#FF0000"}/> ON GOING </div>)
         }
         let actions = [
             <RaisedButton

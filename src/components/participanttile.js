@@ -16,7 +16,7 @@ import {
   purple500,
 } from 'material-ui/styles/colors';
 
-const style = {margin: 5};
+const style = {margin: "5px"};
 
 export default class ParticipantTile extends Component{
     render(){

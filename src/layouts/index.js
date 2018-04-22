@@ -15,7 +15,7 @@ class DefaultLayout extends React.Component {
       
   
       <div style={globalStyle}>
-        
+      
         {this.props.children()}
         <div style={{margin:"40px 0"}}></div>
         <TabLinks />

@@ -43,7 +43,7 @@ class Hot extends Component{
           </CardTitle>
 
           
-          <Paper style={{marginLeft:"30", marginRight:"10", marginBottom:"20", backgroundColor:"#db2b39", padding:"20", borderRadius:"20",color:"#ffffff"}}>
+          <Paper style={{marginLeft:"30px", marginRight:"10px", marginBottom:"20px", backgroundColor:"#db2b39", padding:"20px", borderRadius:"20px",color:"#ffffff"}}>
           
           <Highlighter
     highlightClassName="YourHighlightClass"
@@ -69,7 +69,7 @@ containerStyle={{backgroundColor:"#FFFFFF"}}>
   </CardTitle>
 
   
-  <Paper style={{width:"300px",marginLeft:"10", marginRight:"10", marginBottom:"20", backgroundColor:"#4062bb", padding:"20", borderRadius:"20",color:"#ffffff"}}>
+  <div style={{width:"300px",marginLeft:"10", marginRight:"10px", marginBottom:"20px", backgroundColor:"#4062bb", padding:"20px", borderRadius:"20px",color:"#ffffff"}}>
   
   <Highlighter
 highlightClassName="YourHighlightClass"
@@ -77,11 +77,11 @@ searchWords={["Rather than judge them","some authority may want for them."]}
 autoEscape={true}
 textToHighlight="Rather than judge them, I give them what they came here for—as expertly, safely, quickly, and painlessly as I can—and I send them home so they can resume the lives they want, and not lives that some authority may want for them."
 />
-    </Paper>
+    </div>
 
 
 
-    <Paper style={{positionleft:"100",width:"300px",marginLeft:"40", marginRight:"10", marginBottom:"40", backgroundColor:"#db2b39", padding:"20", borderRadius:"20",color:"#ffffff"}}>
+    <div style={{float:"right",width:"300px",marginLeft:"40px", marginRight:"10px", marginBottom:"40px", backgroundColor:"#db2b39", padding:"20px", borderRadius:"20px",color:"#ffffff"}}>
   
   <Highlighter
 highlightClassName="YourHighlightClass"
@@ -89,7 +89,7 @@ searchWords={["physically and psychologically harms their mothers, and emasculat
 autoEscape={true}
 textToHighlight="I am pro-life because abortion inhumanely kills children (including members of my own extended family), physically and psychologically harms their mothers, and emasculates their fathers by depriving them of their paternal identity and responsibilities without due process of law."
 />
-    </Paper>
+    </div>
 
 
     </Card>
