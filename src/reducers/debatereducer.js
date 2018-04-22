@@ -41,30 +41,27 @@ const initialState = {
     nodes: [
         {
             against: false,
-            title: "",
+            title: "Sir Tim: So when AI starts to make decisions such as who gets a mortgage, that's a big one. Or which companies to acquire and when AI starts creating its own companies, creating holding companies, generating new versions of itself to run these companies",
             evidence: [
-                "Sir Tim: So when AI starts to make decisions such as who gets a mortgage, that's a big one. Or which companies to acquire and when AI starts creating its own companies, creating holding companies, generating new versions of itself to run these companies",
-                "evidence 2",
-                "evidence 3"
+                "This is because mortgage affects us all.",
+                "Impact on a firm results in a direct impact on it's employees, who go on to influence the economy."
             ],
             citations: [
-                "citation 1",
-                "citation 2",
-                "citation 3"
+                "news.com/reports/mortgage-affects-us-all",
+                "morenews.com/news/apple-layoffs-cupertino-economy"
             ]
         },
         {
             against: true,
-            title: "",
+            title: "Mark Zuckerberg: Whenever I hear people saying AI is going to hurt people in the future, I think yeah, you know, technology can generally always be used for good and bad, and you need to be careful about how you build it and you need to be careful about what you build and how it is going to be used.",
+            
             evidence: [
-                "Mark Zuckerberg: Whenever I hear people saying AI is going to hurt people in the future, I think yeah, you know, technology can generally always be used for good and bad, and you need to be careful about how you build it and you need to be careful about what you build and how it is going to be used.",
-                "evidence 2",
-                "evidence 3"
+                "After all, everything in excess is bad.",
+                "Humans are in control and plan on having AI as an assistant."
             ],
             citations: [
-                "citation 1",
-                "citation 2",
-                "citation 3"
+                "philosophyjournals.com/papers/what-is-excess",
+                "philosophyjournals.com/papers/what-is-control"
             ]
         }
     ]

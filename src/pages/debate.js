@@ -89,7 +89,7 @@ class Debate extends Component{
             <ParticipantsList participants={['Arjit', 'Kshitij']} open={this.props.debateReducer.openFor} against={false}/>
             <ParticipantsList participants={['Ghoshan', 'Yawer']} open={this.props.debateReducer.openAgainst} against={true}/>
             <a onClick={this.props.toggleSideDialog} ><Title style={{color: chosenColor}}>{this.props.debateReducer.title}</Title></a>
-            <LinearProgress mode="determinate" value={70} color="green" style={{height:"30px", marginBottom:"20px"}}/>
+            <LinearProgress mode="determinate" value={70} color={forColor} style={{height:"30px", marginBottom:"20px", backgroundColor:againstColor}}/>
             <div>
                 <div style={{float:"left"}}>Time left: {Math.floor(this.props.debateReducer.time/60)}:{pad(this.props.debateReducer.time % 60)}</div>
                 <div style={{float:"right"}}>55 viewers</div>

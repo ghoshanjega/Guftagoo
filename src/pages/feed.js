@@ -56,15 +56,13 @@ transform: "translateY(-90%)"}}>
                 <img src={Profilepic} width="100" height="200"/></div>
                 <div style={{flex: "50%"}}>
                 
-                <h2 style={{lineHeight:"1.0"}}>Boruto Morty</h2>
+                <h2 style={{lineHeight:"1.0", color:"#00bfa5"}}>Boruto Morty</h2>
                 <List>
                 <ListItem disabled={true} leftAvatar={<Avatar> <Book/> </Avatar>}>Computer Science</ListItem>
-                <ListItem disabled={true} leftAvatar={<Avatar backgroundColor={"#D3D3D3"}> <GroupWork color={"#FFFF00"} /> </Avatar>}>120</ListItem>
+                <ListItem disabled={true} leftAvatar={<Avatar backgroundColor="#D3D3D3"> <GroupWork color="#FFFF00"/> </Avatar>}>120</ListItem>
                 </List>
                 </div>
         </div>
-        <br />
-        <br />
         
         
 
@@ -112,31 +110,32 @@ transform: "translateY(-90%)"}}>
      titleColor="#123456" >
     </CardTitle>
     {/* <CardText > */}
-    <div style={{float:"left", marginBottom:"10", marginLeft:"15", color:"#FF0000",display:"flex"}}><Lens style={{marginRight:"10", size: "3px"}} color={"#FF0000"}/> ON GOING </div>
+    <div style={{float:"left", marginBottom:"10px", marginLeft:"15px", color:"#FF0000",display:"flex"}}><Lens style={{marginRight:"10", size: "3px"}} color="#FF0000"/> ON GOING </div>
    
-        <div style={{float:"right", marginBottom:"10", marginRight:"15"}}> POLITICAL </div>
+        <div style={{float:"right", marginBottom:"10px", marginRight:"15px"}}> POLITICAL </div>
         
     {/* </CardText>  */}
-    <LinearProgress mode="determinate" value={70} style={{height: "10"}} color={"#9CCC65"} />
+    <LinearProgress mode="determinate" value={70} style={{height: "10px"}} color="#9CCC65" />
   </Card>
   </ListItem>
 
   <ListItem>
   <Card 
   containerStyle={{backgroundColor:"#ffffff"}}>
-    <CardTitle 
+    <CardTitle
+    onClick={() =>  navigateTo("/results/")}>
      //style={{height: "80px"}}
      titleStyle={{ fontSize: '25px' }}
      title="Should adults have the right to carry a concealed handgun?"
      titleColor="#123456" >
     </CardTitle>
     {/* <CardText > */}
-    <div style={{float:"left", marginBottom:"10", marginLeft:"15"}}> 123,434 views </div>
+    <div style={{float:"left", marginBottom:"10px", marginLeft:"15px"}}> 123,434 views </div>
    
-        <div style={{float:"right", marginBottom:"10", marginRight:"15"}}> POLITICAL </div>
+        <div style={{float:"right", marginBottom:"10px", marginRight:"15px"}}> POLITICAL </div>
         
     {/* </CardText>  */}
-    <LinearProgress mode="determinate" value={70} style={{height: "10"}} color={"#9CCC65"} />
+    <LinearProgress mode="determinate" value={70} style={{height: "10px"}} color="#9CCC65" />
   </Card>
   </ListItem>
 
@@ -150,12 +149,12 @@ transform: "translateY(-90%)"}}>
      titleColor="#123456" >
     </CardTitle>
     {/* <CardText > */}
-    <div style={{float:"left", marginBottom:"10", marginLeft:"15"}}> 123,434 views </div>
+    <div style={{float:"left", marginBottom:"10px", marginLeft:"15px"}}> 123,434 views </div>
    
-        <div style={{float:"right", marginBottom:"10", marginRight:"15"}}> GENERAL </div>
+        <div style={{float:"right", marginBottom:"10px", marginRight:"15px"}}> GENERAL </div>
         
     {/* </CardText>  */}
-    <LinearProgress mode="determinate" value={80} style={{height: "10"}} color={"#9CCC65"} />
+    <LinearProgress mode="determinate" value={80} style={{height: "10px"}} color="#9CCC65" />
   </Card>
   </ListItem>
 
@@ -169,12 +168,12 @@ transform: "translateY(-90%)"}}>
      titleColor="#123456" >
     </CardTitle>
     {/* <CardText > */}
-    <div style={{float:"left", marginBottom:"10", marginLeft:"15"}}> 123,434 views </div>
+    <div style={{float:"left", marginBottom:"10px", marginLeft:"15px"}}> 123,434 views </div>
    
-        <div style={{float:"right", marginBottom:"10", marginRight:"15"}}> GENERAL </div>
+        <div style={{float:"right", marginBottom:"10px", marginRight:"15px"}}> GENERAL </div>
         
     {/* </CardText>  */}
-    <LinearProgress mode="determinate" value={30} style={{height: "10"}} color={"#9CCC65"} />
+    <LinearProgress mode="determinate" value={30} style={{height: "10px"}} color="#9CCC65" />
   </Card>
   </ListItem>
 
@@ -188,12 +187,12 @@ transform: "translateY(-90%)"}}>
      titleColor="#123456" >
     </CardTitle>
     {/* <CardText > */}
-    <div style={{float:"left", marginBottom:"10", marginLeft:"15"}}> 123,434 views </div>
+    <div style={{float:"left", marginBottom:"10px", marginLeft:"15px"}}> 123,434 views </div>
    
-        <div style={{float:"right", marginBottom:"10", marginRight:"15"}}> RELIGION </div>
+        <div style={{float:"right", marginBottom:"10px", marginRight:"15px"}}> RELIGION </div>
         
     {/* </CardText>  */}
-    <LinearProgress mode="determinate" value={70} style={{height: "10"}} color={"#9CCC65"} />
+    <LinearProgress mode="determinate" value={70} style={{height: "10px"}} color="#9CCC65" />
   </Card>
   </ListItem>
 

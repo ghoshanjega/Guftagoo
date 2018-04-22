@@ -11,7 +11,7 @@ import CircularProgress from 'material-ui/CircularProgress';
 import { Spellcheck, Done, ThumbDown, ThumbUp, ViewHeadline, Search } from 'material-ui-icons';
 import TextField from 'material-ui/TextField';
 
-
+import Title from '../components/title'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import * as Colors from 'material-ui/styles/colors';
@@ -48,9 +48,9 @@ const Discover = () => (
     />
     </ListItem>
     <ListItem style={{height:"80px"}}>
-    <h2 style={{color:"#00BFA5", float:"right", marginRight:"20", marginLeft:"20"}}>
-    <ViewHeadline color={"#00BFA5"}/> CATEGORIES
-  </h2>
+    <h1>
+    <ViewHeadline color={"#000000"}/> CATEGORIES
+  </h1>
       </ListItem>
    
 

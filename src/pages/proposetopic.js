@@ -28,7 +28,7 @@ export default class ProposeTopic extends Component{
                 rowsMax={4}
                 />
             <TextField fullWidth={true}
-                hintText="Relevant tags"
+                hintText="Category"
                 />
                 <div style={{margin: "40px 0"}}></div>
             <RaisedButton label="Submit" backgroundColor={'#00bfa5'} labelColor="#FFFFFF" fullWidth={true} onClick={handleSubmit} />
