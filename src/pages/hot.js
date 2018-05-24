@@ -35,7 +35,7 @@ class Hot extends Component{
         <ListItem>
           <Whatshot color={"#FF0000"} style={{float:"right", marginRight: 20, marginTop: 20}} />
         <Card 
-        style={{backgroundColor:"#FFFFFF", border:"5", borderColor:"#004D40"}}>
+        style={{backgroundColor:"#FFFFbf", border:"5", borderColor:"#004D40", paddingBottom:"10px"}}>
           <CardTitle 
            titleStyle={{ fontSize: '25px' }}
            title="Is sexual orientation determined at birth?"
@@ -61,15 +61,15 @@ class Hot extends Component{
 <ListItem>
 <Whatshot color={"#FF0000"} style={{float:"right", marginRight: 20, marginTop: 20}} />
 <Card 
-containerStyle={{backgroundColor:"#FFFFFF"}}>
+containerStyle={{backgroundColor:"#bfFFFF", paddingBottom:"150"}}>
   <CardTitle 
    titleStyle={{ fontSize: '25px' }}
    title="Should abortion be illegal?"
    titleColor="#004d40" >
   </CardTitle>
 
-  
-  <div style={{width:"300px",marginLeft:"10", marginRight:"10px", marginBottom:"20px", backgroundColor:"#4062bb", padding:"20px", borderRadius:"20px",color:"#ffffff"}}>
+  <CardText>
+  <div style={{width:"300px",marginLeft:"10", marginRight:"10px", marginBottom:"10px", backgroundColor:"#4062bb", padding:"20px", borderRadius:"20px",color:"#ffffff"}}>
   
   <Highlighter
 highlightClassName="YourHighlightClass"
@@ -90,7 +90,7 @@ autoEscape={true}
 textToHighlight="I am pro-life because abortion inhumanely kills children (including members of my own extended family), physically and psychologically harms their mothers, and emasculates their fathers by depriving them of their paternal identity and responsibilities without due process of law."
 />
     </div>
-
+</CardText>
 
     </Card>
 </ListItem>

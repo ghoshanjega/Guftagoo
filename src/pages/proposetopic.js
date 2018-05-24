@@ -6,6 +6,24 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
+const getTheme = () => {
+    let overwrites = {
+      "palette": {
+          "textColor": fade(Colors.darkBlack, 0.87),
+          "primary1Color": Colors.pink900,
+          "primary2Color": Colors.brown600,
+          "borderColor": Colors.grey900,
+          "canvasColor": Colors.white
+      },
+      "card": {
+          "titleColor": Colors.purple500,
+          "subtitleColor": Colors.pink500,
+          "fontWeight": {}
+      }
+  };
+    return getMuiTheme(baseTheme, overwrites);
+  }
+
 const handleSubmit = () => {
     alert("Your topic has been posted! It will be approved for debate if it reaches a threshold")
 }
@@ -15,7 +33,9 @@ export default class ProposeTopic extends Component{
     render() {
         return (
             <MuiThemeProvider muiTheme={getMuiTheme(baseTheme)}><div>
-            <Title color="#004d40">Propose A Topic</Title>
+               
+            <Title color="#004d40" style={{paddingTop:"90px", paddingBottom: "30px"}}>Propose A Topic</Title>
+            
             <div style={{margin: "20px 0"}}></div>
             <div style={{margin:"0 20px"}}>
             <TextField fullWidth={true}
@@ -30,11 +50,13 @@ export default class ProposeTopic extends Component{
             <TextField fullWidth={true}
                 hintText="Category"
                 />
-                <div style={{margin: "40px 0"}}></div>
-            <RaisedButton label="Submit" backgroundColor={'#00bfa5'} labelColor="#FFFFFF" fullWidth={true} onClick={handleSubmit} />
+                <div style={{padding:"40px",   }}>
+            <RaisedButton label="Submit" style={{width:"50px",marginLeft:"110px"}} backgroundColor={'#00bfa5'} labelColor="#FFFFFF"  onClick={handleSubmit} />
+                </div>
             </div>
                 
         </div>
+        
         </MuiThemeProvider>);
     }
 }

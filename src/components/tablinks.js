@@ -25,9 +25,10 @@ class TabLinks extends Component{
       
         return (
 
-       <Paper style={{position:"fixed", bottom:"0", margin:"0 auto", width:"100%"}}>
+       <Paper style={{position:"fixed", bottom:"0", margin:"0 auto", width:"442px"}}>
         <BottomNavigation selectedIndex={tmpselind}>
           <BottomNavigationItem
+            style={{width:"25%"}}
             label="Discover"
             icon={<Pageview/>}
             onClick={() => this.select(0, "/discover/")}

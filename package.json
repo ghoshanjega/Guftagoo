@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-example-redux",
+  "name": "Guftagoo",
   "private": true,
-  "description": "Gatsby example site that shows use of redux.",
+  "description": "HackUST 2018",
   "version": "1.0.0",
-  "author": "Scotty Eckenthal <scott.eckenthal@gmail.com>",
+  "author": "Ghoshan Jaganathamni",
   "dependencies": {
     "gatsby": "latest",
     "gatsby-link": "latest",
