@@ -421,7 +421,7 @@ class Discover extends React.Component{
  
   <ListItem>
   <Card 
-  containerStyle={{backgroundColor:"ffffff"}}>
+  containerStyle={{backgroundColor:"ffffff", marginBottom:"50px"}}>
   <CircularProgress
           mode="determinate"
           value="90"
@@ -451,22 +451,7 @@ class Discover extends React.Component{
   </Card>
   </ListItem>
 
-  <ListItem>
-  <Card 
-  containerStyle={{backgroundColor:"#E8F5E9"}}>
-    <CardTitle 
-     //style={{height: "80px"}}
-     titleStyle={{ fontSize:"25px" }}
-     title="Should the United States Keep Daylight Saving Time?"
-     titleColor="#123456" >
-    </CardTitle>
-    <LinearProgress mode="determinate" value={40} color="green" style={{height:"10px"}}/>
-    <CardActions style={{alignContent:"flex-end"}}>
-      <RaisedButton label="No"   backgroundColor="#ffffff" />
-      <RaisedButton label="Yes"  style={{alignContent:"flex-end"}}/>
-    </CardActions>
-  </Card>
-  </ListItem>
+
 
   
   </List>

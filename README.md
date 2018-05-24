@@ -1,7 +1,10 @@
 # Guftagoo
 
-[Please inspect on Mobile mode for a decent results](https://gracious-kilby-19e548.netlify.com/)
+Checkout the live demo at
+[guftagoo.netlify.com/discover](https://guftagoo.netlify.com/discover)
 
+![discover](src/discover.png)
+![feed](src/feed.png)
 
 
 
