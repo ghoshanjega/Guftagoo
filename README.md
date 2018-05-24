@@ -1,7 +1,7 @@
 # Guftagoo
 
-# HackUST competition EduTech 1st runners up
+[Please inspect on Mobile mode for a decent results](https://gracious-kilby-19e548.netlify.com/)
 
-# Overview
+
 
 
